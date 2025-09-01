@@ -1,0 +1,36 @@
+{
+  "dashboard": [
+    {
+      "name": "test-icon",
+      "path": "image/dashboard/test-icon.svg",
+      "url": "https://cdn.jsdelivr.net/gh/HiFinTeam/risk-image@main/image/dashboard/test-icon.svg"
+    }
+  ],
+  "product": [
+    {
+      "name": "icon-wrapper",
+      "path": "image/product/icon-wrapper.svg",
+      "url": "https://cdn.jsdelivr.net/gh/HiFinTeam/risk-image@main/image/product/icon-wrapper.svg"
+    },
+    {
+      "name": "icon-wrapper-1",
+      "path": "image/product/icon-wrapper-1.svg",
+      "url": "https://cdn.jsdelivr.net/gh/HiFinTeam/risk-image@main/image/product/icon-wrapper-1.svg"
+    },
+    {
+      "name": "icon-wrapper-2",
+      "path": "image/product/icon-wrapper-2.svg",
+      "url": "https://cdn.jsdelivr.net/gh/HiFinTeam/risk-image@main/image/product/icon-wrapper-2.svg"
+    },
+    {
+      "name": "icon-wrapper-3",
+      "path": "image/product/icon-wrapper-3.svg",
+      "url": "https://cdn.jsdelivr.net/gh/HiFinTeam/risk-image@main/image/product/icon-wrapper-3.svg"
+    },
+    {
+      "name": "icon-wrapper-4",
+      "path": "image/product/icon-wrapper-4.svg",
+      "url": "https://cdn.jsdelivr.net/gh/HiFinTeam/risk-image@main/image/product/icon-wrapper-4.svg"
+    }
+  ]
+}
