@@ -2,25 +2,31 @@ name: Generate Image Index
 
 on:
   push:
-    branches: [ "main" ] # 当向main分支推送代码时触发
+    branches: [ "main" ]
+    # 关键修改：忽略对images.json文件的修改所触发的push，避免循环
+    paths-ignore:
+      - 'images.json'
+
+# 关键修改：提升默认token的权限，使其有写入权限
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4 # 检出仓库代码
+      - uses: actions/checkout@v4
+        # 关键修改：使用显式定义的token权限进行检出
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
-        run: |
-          pip install pathlib
-
       - name: Run index generator script
-        run: python scripts/generate_index.py
+        run: python ../../scripts/generate_index.py
 
       - name: Commit and push if index changed
         run: |
