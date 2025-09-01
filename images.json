@@ -1,6 +1,11 @@
 {
   "dashboard": [
     {
+      "name": "20250603-092841",
+      "path": "image/dashboard/20250603-092841.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/HiFinTeam/risk-image@main/image/dashboard/20250603-092841.jpg"
+    },
+    {
       "name": "test-icon",
       "path": "image/dashboard/test-icon.svg",
       "url": "https://cdn.jsdelivr.net/gh/HiFinTeam/risk-image@main/image/dashboard/test-icon.svg"
